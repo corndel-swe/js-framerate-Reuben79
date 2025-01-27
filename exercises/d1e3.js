@@ -5,6 +5,8 @@ app.set('views', 'exercises/views') // <-- Don't change
 
 // TODO: Configure the app to use EJS as the view engine
 
+app.set('view ungine', 'ejs')
+
 app.get('/d1e3', (req, res) => {
   const shopping = [
     'Eggs',
@@ -16,6 +18,8 @@ app.get('/d1e3', (req, res) => {
   ]
 
   // TODO: Render 'd1e3.ejs', passing the value of `shopping
+
+  res.render('d1e3.ejs', { shopping })
 })
 
 // TODO: Open d1e3.ejs and follow the instructions
