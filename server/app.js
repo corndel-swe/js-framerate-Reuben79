@@ -2,6 +2,6 @@ import express from 'express'
 
 const app = express()
 
-// TODO: add your endpoints here
+app.use(express.static('exercises/public'))
 
 export default app
